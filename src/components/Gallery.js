@@ -1,8 +1,8 @@
-import GalleryItem from "./GalleryItem"
 import { useContext } from "react"
 import { DataContext } from "../context/DataContext"
+import GalleryItem from "./GalleryItem"
 
-
+//gallery function is in charge of parsing through our data with the .map method, identifying unique id's for each song/album, and displaying our results
 const Gallery = () => {
     
     const data = useContext(DataContext)
@@ -19,3 +19,4 @@ const Gallery = () => {
 }
 
 export default Gallery
+
